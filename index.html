@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ACARA 2 | Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        main {
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary shadow fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="bi bi-buildings-fill"></i>BATAM</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="bi bi-house-fill"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#deskripsi">
+                                <i class="bi bi-file-earmark-text-fill"></i>Deskripsi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#penduduk">
+                                <i class="bi bi-person-workspace"></i>Penduduk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kecamatan">
+                                <i class="bi bi-building-fill"></i>Kecamatan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sumber data">
+                                <i class="bi bi-box-arrow-up-right"></i>Sumber Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gambar">
+                                <i class="bi bi-image-fill"></i>Gambar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#infoModal">
+                                <i class="bi bi-info-circle-fill"></i></a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Title -->
+        <div class="alert alert-primary shadow text-center" role="alert">
+            <h1>BATAM</h1>
+            <h3>Kepulauan Riau</h3>
+        </div>
+        <!-- Deskripsi -->
+        <div class="card shadow" id="deskripsi">
+            <div class="card-header">
+                <h5>
+                    <i class="bi bi-file-earmark-text-fill"></i>Deskripsi
+                </h5>
+            </div>
+            <div class="card-body">
+                <!-- Pargraf -->
+                <p>
+                    Pulau Batam dihuni pertama kali oleh orang Melayu dengan sebutan orang selat sejak tahun 231 Masehi.
+                    Pulau yang pernah menjadi medan perjuangan Laksamana Hang Nadim dalam melawan penjajah ini digunakan
+                    oleh pemerintah pada dekade 1960-an sebagai basis logistik minyak bumi di Pulau Sambu.
+                </p>
+                <p>
+                    Batam adalah salah satu pulau dalam gugusan Kepulauan Riau dan merupakan sebuah pulau di antara 329
+                    pulau yang terletak di antara Selat Malaka dan Selat Singapura yang secara keseluruhan yang
+                    membentuk wilayah Batam. Langkanya catatan tertulis tentang pulau ini, di mana hanya ada satu
+                    literatur yang menyebut nama Batam, yaitu Traktat London yang mengatur pembagian wilayah kekuasaan
+                    antara Belanda dan Inggris. Namun, menurut para pesiar dari China, pulau ini sudah dihuni sejak 231
+                    Masehi ketika Singapura masih disebut Pulau Ujung.
+                </p>
+                <p>
+                    Seiring pesatnya perkembangan Pulau Batam, pada dekade 1980-an, berdasarkan Peraturan Pemerintah
+                    Nomor 34 tahun 1983, wilayah Kecamatan Batam yang merupakan bagian dari Kabupaten Kepulauan Riau,
+                    ditingkatkan statusnya menjadi Kotamadya Batam yang memiliki tugas dalam menjalankan administrasi
+                    pemerintahan dan kemasyarakatan serta mendudukung pembangunan yang dilakukan Otorita Batam (BP
+                    Batam).
+                </p>
+            </div>
+        </div>
+
+        <!-- Penduduk -->
+        <div class="card shadow mt-3" id="penduduk">
+            <div class="card-header">
+                <h5>
+                    <i class="bi bi-person-workspace"></i>Penduduk
+                </h5>
+            </div>
+            <div class="card-body">
+
+                <!-- Tabel -->
+                <table class="table table-striped">
+                    <tr>
+                        <th>
+                            NO
+                        </th>
+                        <th>JENIS KELAMIN</th>
+                        <th>JUMLAH</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Laki-Laki</td>
+                        <td>705.945 jiwa</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Perempuan</td>
+                        <td>688.514 jiwa</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Total</td>
+                        <td>1.394.459 jiwa</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Kecamatan -->
+        <div class="card shadow mt-3" id="penduduk">
+            <div class="card-header">
+                <h5>
+                    <i class="bi bi-building-fill"></i>Kecamatan
+                </h5>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>Kecamatan AYAU </li>
+                    <li>Kecamatan BATANTA UTARA </li>
+                    <li>Kecamatan BATANTA SELATAN </li>
+                    <li>Kecamatan KEPULAUAN AYAU </li>
+                    <li>Kecamatan KEPULAUAN SEMBILAN </li>
+                    <li>Kecamatan KOFIAU </li>
+                    <li>Kecamatan KOTA WAISAI </li>
+                    <li>Kecamatan MEOS MANSAR </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Sumber Data -->
+        <div class="card shadow mt-3" id="sumber data">
+            <div class="card-header">
+                <h5>
+                    <i class="bi bi-box-arrow-up-right"></i>Sumber Data
+                </h5>
+            </div>
+            <div class="card-body">
+                <a href="https://rajaampatkab.go.id/" target="_blank" rel="noopener noreferrer">Raja Ampat</a>
+            </div>
+
+        </div>
+
+        <!-- Gambar -->
+        <div class="card shadow mt-3" id="gambar">
+            <div class="card-header">
+                <h5>
+                    <i class="bi bi-building-fill"></i>Gambar
+                </h5>
+            </div>
+            <div class="card-body">
+                <img src="https://iboss.go.id/uploads/361/20200629/20200629102007.jpg" width="700">
+                <br>
+                <img src="sunset-di-jembatan-1-barelang.jpg" width="700">
+            </div>
+            <hr>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CNNREEQVXho?si=3zBMioptUcuFgRX7"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+
+
+    </main>
+
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Info</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td>Rifkya</td>
+                        </tr>
+                        <tr>
+                            <td>NIM</td>
+                            <td>:</td>
+                            <td>25/568773/SV/27530</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas</td>
+                            <td>:</td>
+                            <td>PGWEB A</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
